@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>game</title>
+    <style>
+        .container{position: absolute;
+                   left: 27px
+        }
+        .container>img{position: absolute;
+            left: 45px;
+        }
+        button{margin-top: 180px;}
+        
+        .foto-game{width: 100%;
+                   position: relative;
+                   margin-top: 400px;
+        }
+        h2{position:absolute;
+           top: 320px;
+           font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        h5{font-family: Verdana, Geneva, Tahoma, sans-serif;
+           text-align: center;
+        }
+        input{position: relative;
+              left: 160px;
+        }
+        form{background-color: #f4f4f4;
+             padding-bottom: 100px;
+             display: none;
+        }
+
+        .btn1{margin-top: 30px;
+              margin-left: 50px;
+              position: absolute;
+        }
+        .btn2{position: absolute;
+              margin-top: 30px;
+              
+        }
+        #display{background-color: blue;
+                 color: white;
+                position: relative;
+                bottom:80px ;
+                left: 40%;}
+        #display:hover{background-color: rgb(93, 93, 255);}
+
+        #result{margin-top: 70px;}
+        .btn3{margin-left: 157px;
+        position: absolute;
+    padding: 9px 70px;}
+
+
+    .f2{background-color: blanchedalmond;
+        
+    position: absolute ;
+
+    top: 40px;}
+
+
+    .f2>h2{background-color: blue;}
+    </style>
+
+
+
+<h2>Game Batu Gunting Kertas</h2>
+<img class="foto-game" src="suit.jpg">
+<button id="display" onclick="play(1)">Mulai Game</button>
+<form id="game">
+<h5>Pilih salah satu : <strong>batu,gunting atau kertas<strong></h5>
+<input type="text" id="pilihan">
+<button class="btn2"onclick="getinput()" id="pilih">Pilih</button>
+<button class="btn1" id="batal">Batal</button>
+<button class="btn3" id="retry" style="display: none;" onclick="retri()">Main Lagi</button>
+<p id="result" style="font-family: Verdana, Geneva, Tahoma, sans-serif;"></p>
+</form>
+
+<br>
+
+<form class="f2">
+   <h2 class="title">Seberapa Hebat Pengetahuan Umum Anda </h2>
+   <button onclick="mulai()">Mulai</button>
+   <h3>Hewan Apa Yang Memiliki Alat Kelamin Berduri</h3>
+    <input type="checkbox" value="Kucing">
+</form>
+
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
